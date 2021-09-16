@@ -12,20 +12,21 @@ class WidgetTree extends StatelessWidget {
         small: Row(
           children: [
             Expanded(child: LeftPage()),
-            Expanded(child: CenterPage()),
+            SizedBox(child: CenterPage(), width: 600),
+            Expanded(child: Container()),
           ],
         ),
         medium: Row(
-          children: [
+          children: const [
             Expanded(child: LeftPage()),
-            Expanded(child: CenterPage()),
+            SizedBox(child: CenterPage(), width: 600),
             Expanded(child: RightPage()),
           ],
         ),
         large: Row(
-          children: [
+          children: const [
             Expanded(child: LeftPage()),
-            Expanded(child: CenterPage()),
+            SizedBox(child: CenterPage(), width: 600),
             Expanded(child: RightPage()),
           ],
         ),
