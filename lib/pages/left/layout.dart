@@ -7,7 +7,8 @@ class Layout extends StatelessWidget {
 
   static final iconOnlyLimit = 300.0;
 
-  static isIconLimit(BuildContext context) => MediaQuery.of(context).size.width <= iconOnlyLimit;
+  static isIconLimit(BuildContext context) =>
+      MediaQuery.of(context).size.width <= iconOnlyLimit;
 
   @override
   Widget build(BuildContext context) {

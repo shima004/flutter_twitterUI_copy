@@ -14,7 +14,22 @@ class MyApp extends StatelessWidget {
       title: 'twitter_flutter_copy',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontFamily: 'Segoe UI',
+            fontWeight: FontWeight.bold,
+          ),
+          headline2: TextStyle(
+            fontSize: 15,
+            color: Colors.white,
+            fontFamily: 'Segoe UI',
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
+      darkTheme: ThemeData.dark(),
       home: WidgetTree(),
     );
   }
