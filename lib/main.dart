@@ -29,7 +29,23 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData.dark().copyWith(
+        backgroundColor: Color(0xFF15181C),
+        textTheme: const TextTheme(
+          headline1: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontFamily: 'Segoe UI',
+            fontWeight: FontWeight.bold,
+          ),
+          headline2: TextStyle(
+            fontSize: 15,
+            color: Colors.white,
+            fontFamily: 'Segoe UI',
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       home: WidgetTree(),
     );
   }

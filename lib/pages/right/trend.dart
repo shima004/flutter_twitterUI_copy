@@ -10,7 +10,7 @@ class TrendPage extends StatelessWidget {
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
-              color: Color(0xFF15181C),
+              color: Theme.of(context).backgroundColor,
               // border: Border.all(color: Colors.black),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(10),
@@ -20,27 +20,42 @@ class TrendPage extends StatelessWidget {
               ),
             ),
             width: 256.0,
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Text(
               'Trends',
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
           Container(
+            color: Theme.of(context).backgroundColor,
             width: 256.0,
-            child: Text('1'),
+            child: Text(
+              'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
+              style: Theme.of(context).textTheme.headline2,
+            ),
+            padding: const EdgeInsets.all(16.0),
           ),
           Container(
+            color: Theme.of(context).backgroundColor,
             width: 256.0,
-            child: Text('1'),
+            child: Text(
+              'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
+              style: Theme.of(context).textTheme.headline2,
+            ),
+            padding: const EdgeInsets.all(16.0),
           ),
           Container(
+            color: Theme.of(context).backgroundColor,
             width: 256.0,
-            child: Text('1'),
+            child: Text(
+              'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
+              style: Theme.of(context).textTheme.headline2,
+            ),
+            padding: const EdgeInsets.all(16.0),
           ),
           Container(
             decoration: BoxDecoration(
-              color: Color(0xFF15181C),
+              color: Theme.of(context).backgroundColor,
               // border: Border.all(color: Colors.black),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.zero,
@@ -50,7 +65,7 @@ class TrendPage extends StatelessWidget {
               ),
             ),
             width: 256.0,
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Text(
               'Trends',
               style: Theme.of(context).textTheme.headline1,

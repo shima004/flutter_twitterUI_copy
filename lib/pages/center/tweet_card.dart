@@ -17,6 +17,7 @@ class TweetCard extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
               child: Icon(
                 Icons.account_circle,
+                color: Colors.grey,
               ),
             ),
             Flexible(
