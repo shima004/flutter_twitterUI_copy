@@ -19,7 +19,7 @@ class TrendPage extends StatelessWidget {
                 bottomLeft: Radius.zero,
               ),
             ),
-            width: 256.0,
+            width: 350.0,
             padding: const EdgeInsets.all(8.0),
             child: Text(
               'Trends',
@@ -28,7 +28,7 @@ class TrendPage extends StatelessWidget {
           ),
           Container(
             color: Theme.of(context).backgroundColor,
-            width: 256.0,
+            width: 350.0,
             child: Text(
               'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
               style: Theme.of(context).textTheme.headline2,
@@ -37,7 +37,7 @@ class TrendPage extends StatelessWidget {
           ),
           Container(
             color: Theme.of(context).backgroundColor,
-            width: 256.0,
+            width: 350.0,
             child: Text(
               'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
               style: Theme.of(context).textTheme.headline2,
@@ -46,7 +46,7 @@ class TrendPage extends StatelessWidget {
           ),
           Container(
             color: Theme.of(context).backgroundColor,
-            width: 256.0,
+            width: 350.0,
             child: Text(
               'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
               style: Theme.of(context).textTheme.headline2,
@@ -64,7 +64,7 @@ class TrendPage extends StatelessWidget {
                 bottomLeft: Radius.circular(10),
               ),
             ),
-            width: 256.0,
+            width: 350.0,
             padding: const EdgeInsets.all(8.0),
             child: Text(
               'Trends',

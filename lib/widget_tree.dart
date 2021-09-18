@@ -15,7 +15,9 @@ class WidgetTree extends StatelessWidget {
             SizedBox(child: LeftPage(), width: 60),
             Expanded(child: CenterPage()),
             SizedBox(
-                child: Container(),
+                child: Container(
+                  color: Theme.of(context).backgroundColor,
+                ),
                 width: Layout.Width(context) - 660 > 0.0
                     ? Layout.Width(context) - 660
                     : 0.0),
@@ -25,7 +27,10 @@ class WidgetTree extends StatelessWidget {
           children: [
             Expanded(child: LeftPage()),
             SizedBox(child: CenterPage(), width: 600),
-            Expanded(child: Container()),
+            Expanded(
+                child: Container(
+              color: Theme.of(context).backgroundColor,
+            )),
           ],
         ),
         medium: Row(
@@ -42,10 +47,16 @@ class WidgetTree extends StatelessWidget {
           ],
         ),
         large: Row(
-          children: const [
-            Expanded(child: LeftPage()),
+          children: [
+            Expanded(
+              child: Container(color: Theme.of(context).backgroundColor),
+            ),
+            LeftPage(),
             SizedBox(child: CenterPage(), width: 600),
-            Expanded(child: RightPage()),
+            RightPage(),
+            Expanded(
+              child: Container(color: Theme.of(context).backgroundColor),
+            ),
           ],
         ),
       ),
