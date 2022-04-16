@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter_flutter_copy/settings/const.dart';
 
 class SidebarIcon extends StatelessWidget {
   const SidebarIcon({Key? key}) : super(key: key);
@@ -9,21 +10,21 @@ class SidebarIcon extends StatelessWidget {
       height: double.infinity,
       child: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(6.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: const [
               Padding(
                 padding: EdgeInsets.all(12.0),
-                child: Icon(Icons.home, size: 26),
+                child: Icon(Icons.home, size: leftSideberIconSize),
               ),
               Padding(
                 padding: EdgeInsets.all(12.0),
-                child: Icon(Icons.search, size: 26),
+                child: Icon(Icons.search, size: leftSideberIconSize),
               ),
               Padding(
                 padding: EdgeInsets.all(12.0),
-                child: Icon(Icons.favorite, size: 26),
+                child: Icon(Icons.favorite, size: leftSideberIconSize),
               ),
             ],
           ),

@@ -16,6 +16,13 @@ class SidebarText extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               IconWithText(icon: Icons.home, text: 'Home'),
+              IconWithText(icon: Icons.search, text: 'Search'),
+              IconWithText(icon: Icons.notifications, text: 'Notifications'),
+              IconWithText(icon: Icons.mail, text: 'Messages'),
+              IconWithText(icon: Icons.bookmark, text: 'Bookmarks'),
+              IconWithText(icon: Icons.list, text: 'Lists'),
+              IconWithText(icon: Icons.person, text: 'Profile'),
+              IconWithText(icon: Icons.settings, text: 'Settings'),
             ],
           ),
         ),

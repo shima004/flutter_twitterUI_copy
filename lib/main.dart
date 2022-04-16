@@ -30,7 +30,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       darkTheme: ThemeData.dark().copyWith(
-        backgroundColor: Color(0xFF15181C),
+        // backgroundColor: Color(0xFF15181C),
+        backgroundColor: Colors.black,
         textTheme: const TextTheme(
           headline1: TextStyle(
             fontSize: 20,
