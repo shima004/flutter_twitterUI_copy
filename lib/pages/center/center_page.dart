@@ -8,7 +8,12 @@ class CenterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        centerTitle: false,
+        backgroundColor: Theme.of(context).backgroundColor,
+        title: const Text(
+          'Home',
+          textAlign: TextAlign.left,
+        ),
       ),
       body: ListView(children: List.generate(20, (index) => TweetCard())),
     );

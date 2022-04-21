@@ -11,7 +11,7 @@ class IconWithText extends StatelessWidget {
     const textSize = 20.0;
 
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.fromLTRB(0, 16, 16, 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter_flutter_copy/settings/const.dart';
 
 class TrendPage extends StatelessWidget {
   const TrendPage({Key? key}) : super(key: key);
@@ -10,8 +11,8 @@ class TrendPage extends StatelessWidget {
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
-              color: Theme.of(context).backgroundColor,
-              // border: Border.all(color: Colors.black),
+              // color: Theme.of(context).backgroundColor,
+              color: gray,
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(10),
                 topRight: Radius.circular(10),
@@ -27,7 +28,7 @@ class TrendPage extends StatelessWidget {
             ),
           ),
           Container(
-            color: Theme.of(context).backgroundColor,
+            color: gray,
             width: 350.0,
             child: Text(
               'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
@@ -36,7 +37,7 @@ class TrendPage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
           ),
           Container(
-            color: Theme.of(context).backgroundColor,
+            color: gray,
             width: 350.0,
             child: Text(
               'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
@@ -45,7 +46,7 @@ class TrendPage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
           ),
           Container(
-            color: Theme.of(context).backgroundColor,
+            color: gray,
             width: 350.0,
             child: Text(
               'TrendTrendTrendTrendTrendTrendTrendTrendTrendTrend',
@@ -54,10 +55,10 @@ class TrendPage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
           ),
           Container(
-            decoration: BoxDecoration(
-              color: Theme.of(context).backgroundColor,
+            decoration: const BoxDecoration(
+              color: gray,
               // border: Border.all(color: Colors.black),
-              borderRadius: const BorderRadius.only(
+              borderRadius: BorderRadius.only(
                 topLeft: Radius.zero,
                 topRight: Radius.zero,
                 bottomRight: Radius.circular(10),
@@ -67,8 +68,10 @@ class TrendPage extends StatelessWidget {
             width: 350.0,
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Trends',
-              style: Theme.of(context).textTheme.headline1,
+              'read more',
+              style: Theme.of(context).textTheme.headline2?.copyWith(
+                    color: Colors.blue,
+                  ),
             ),
           ),
         ],

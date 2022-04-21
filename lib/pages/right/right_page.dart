@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter_flutter_copy/pages/right/search_bar.dart';
 import 'package:twitter_flutter_copy/pages/right/trend.dart';
 
 class RightPage extends StatelessWidget {
@@ -13,6 +14,7 @@ class RightPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            SearchBar(),
             TrendPage(),
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter_flutter_copy/settings/const.dart';
 import 'package:twitter_flutter_copy/widget_tree.dart';
 
 void main() {
@@ -30,7 +31,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       darkTheme: ThemeData.dark().copyWith(
-        // backgroundColor: Color(0xFF15181C),
         backgroundColor: Colors.black,
         textTheme: const TextTheme(
           headline1: TextStyle(

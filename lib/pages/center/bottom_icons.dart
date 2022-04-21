@@ -16,8 +16,7 @@ class BottomIconBar extends StatelessWidget {
     IconDatas(
         icon: Icons.message_outlined, hoverColor: const Color(0x19299BF0), highlightColor: const Color(0x33299BF0), onPressed: () => print('home')),
     IconDatas(icon: Icons.repeat, hoverColor: const Color(0x1900BA7C), highlightColor: const Color(0x1900BA7C), onPressed: () => print('search')),
-    IconDatas(
-        icon: Icons.favorite_border, hoverColor: const Color(0x19F91880), highlightColor: const Color(0x33F91880), onPressed: () => print('noti')),
+    IconDatas(icon: Icons.star_border, hoverColor: const Color(0x19F91880), highlightColor: const Color(0x33F91880), onPressed: () => print('noti')),
     IconDatas(
         icon: Icons.file_upload_outlined, hoverColor: const Color(0x19299BF0), highlightColor: const Color(0x33299BF0), onPressed: () => print('a'))
   ];
