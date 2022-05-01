@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:twitter_flutter_copy/pages/center/tweet_card.dart';
+import 'package:twitter_flutter_copy/pages/center/tweet_deck.dart';
 
 class CenterPage extends StatelessWidget {
   const CenterPage({Key? key}) : super(key: key);
@@ -15,7 +15,8 @@ class CenterPage extends StatelessWidget {
           textAlign: TextAlign.left,
         ),
       ),
-      body: ListView(children: List.generate(20, (index) => TweetCard())),
+      body: const TweetDeck(),
+      // body: ListView(children: List.generate(20, (index) => TweetCard())),
     );
   }
 }
