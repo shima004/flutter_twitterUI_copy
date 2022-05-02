@@ -5,7 +5,7 @@ class ActionIconButton extends StatefulWidget {
   final Color hoverColor;
   final Color highlightColor;
   final Function onPressed;
-  ActionIconButton({required this.icon, required this.hoverColor, required this.highlightColor, required this.onPressed});
+  const ActionIconButton({required this.icon, required this.hoverColor, required this.highlightColor, required this.onPressed});
 
   @override
   _ActionIconButtonState createState() => _ActionIconButtonState();
@@ -28,14 +28,14 @@ class _ActionIconButtonState extends State<ActionIconButton> {
         });
       },
       child: IconButton(
-        onPressed: () {},
+        onPressed: () => widget.onPressed(),
         splashRadius: 18.0,
         hoverColor: widget.hoverColor,
         highlightColor: widget.highlightColor,
         icon: Icon(
           widget.icon,
           size: 18.0,
-          color: _isPressed ? widget.hoverColor.withAlpha(200) : Colors.black,
+          color: _isPressed ? widget.hoverColor.withAlpha(200) : Color(0xFF62676B),
         ),
       ),
     );
